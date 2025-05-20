@@ -1,0 +1,129 @@
+/* Styling untuk keseluruhan halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5ead6b;
+    color: #111010;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Container utama */
+  .card {
+    max-width: 1100px; /* Diubah menjadi 1100px sesuai permintaan */
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header utama */
+  h1 {
+    color: #8cec7f;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  /* Paragraf */
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  li {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Garis pemisah */
+  hr {
+    border: none;
+    height: 2px;
+    background: #080808; /* Diubah menjadi #080808 sesuai permintaan */
+    margin: 10px 0;
+  }
+  
+  /* Greeting */
+  small {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Styling untuk QnA */
+  .qna-section {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .qna-item {
+    margin-bottom: 15px;
+  }
+  
+  .qna-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .qna-item p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  
+  a {
+    color: #007bff; /* Warna tautan biru */
+    text-decoration: none; /* Hilangkan garis bawah default */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat di-hover */
+  }
+  
+  /* Styling untuk Informasi Tambahan */
+  .informasi-tambahan {
+    font-style: italic;
+    color: #777;
+    font-size: 0.85em;
+    margin-top: 5px;
+  }
+  
+  /* Styling untuk Produk Detail */
+  .produk-detail-section {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .produk-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .produk-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .produk-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .produk-item p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+  }
