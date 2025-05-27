@@ -11,16 +11,15 @@ const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"));
 const GuestLayout = React.lazy(() => import("./layouts/GuestLayout")); 
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
+const Products = React.lazy(() => import("./pages/Products"));
 const Customers = React.lazy(() => import("./pages/Customers"));
 const Login = React.lazy(() => import("./pages/Auth/Login"));
 const Register = React.lazy(() => import("./pages/Auth/Register"));
 const Forgot = React.lazy(() => import("./pages/Auth/Forgot"));
 
-// Pages - Guest
-// Sesuaikan path impor ini jika perlu
-const GuestPage = React.lazy(() => import("./pages/guest/pages/GuestPage")); // <-- Impor GuestPage
 
-// Pages - Errors & Utility
+const GuestPage = React.lazy(() => import("./pages/guest/pages/GuestPage"));
+
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const Error400 = React.lazy(() => import("./pages/Error400"));
 const Error401 = React.lazy(() => import("./pages/Error401"));
@@ -34,25 +33,25 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/products" element={<Products/>} />
           <Route path="/customers" element={<Customers />} />
           <Route path="/UserList" element={<UserList/>} />
         </Route>
 
-        {/* --- Rute Guest (dibungkus GuestLayout) --- */}
+        
         <Route path="/guest" element={<GuestLayout />}>
            <Route index element={<GuestPage />} />
-           {/* Tambahkan halaman guest lain di bawah /guest jika perlu */}
-           {/* <Route path="about" element={<AboutPage />} /> */}
+         
         </Route>
 
-        {/* --- Rute Autentikasi (dibungkus AuthLayout) --- */}
+      
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot" element={<Forgot />} />
         </Route>
 
-        {/* --- Rute Error (Standalone) --- */}
+       
         <Route path="/error/400" element={<Error400 />} />
         <Route path="/error/401" element={<Error401 />} />
         <Route path="/error/403" element={<Error403 />} />

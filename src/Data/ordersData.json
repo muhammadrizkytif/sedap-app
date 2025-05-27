@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ORD001",
+    "customerName": "Budi Santoso",
+    "orderDate": "2023-10-26",
+    "totalAmount": 150000,
+    "status": "Pending",
+    "items": [
+      { "name": "Produk A", "quantity": 1, "price": 50000 },
+      { "name": "Produk B", "quantity": 2, "price": 50000 }
+    ]
+  },
+  {
+    "id": "ORD002",
+    "customerName": "Ani Lestari",
+    "orderDate": "2023-10-25",
+    "totalAmount": 250000,
+    "status": "Shipped",
+    "items": [{ "name": "Produk C", "quantity": 1, "price": 250000 }]
+  },
+  {
+    "id": "ORD003",
+    "customerName": "Charlie Wijaya",
+    "orderDate": "2023-10-24",
+    "totalAmount": 75000,
+    "status": "Delivered",
+    "items": [{ "name": "Produk D", "quantity": 3, "price": 25000 }]
+  },
+  {
+    "id": "ORD004",
+    "customerName": "Dewi Anggraini",
+    "orderDate": "2023-10-23",
+    "totalAmount": 320000,
+    "status": "Cancelled",
+    "items": [
+      { "name": "Produk E", "quantity": 1, "price": 120000 },
+      { "name": "Produk F", "quantity": 1, "price": 200000 }
+    ]
+  }
+]

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const NavigationBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate(); // Hook untuk navigasi
+  const navigate = useNavigate(); 
 
   const handleLoginRegisterClick = () => {
     setIsMobileMenuOpen(false);

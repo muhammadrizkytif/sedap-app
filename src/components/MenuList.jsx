@@ -1,5 +1,6 @@
-import { CgUserList } from "react-icons/cg"; 
-import { AiOutlineUser } from "react-icons/ai"; 
+import { MdFastfood } from "react-icons/md";
+import { CgUserList } from "react-icons/cg";
+import { AiOutlineUser } from "react-icons/ai";
 import { MdDashboard } from "react-icons/md";
 import { AiFillShopping } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
@@ -35,21 +36,29 @@ export default function MenuList() {
           </NavLink>
         </li>
         <li>
+          <NavLink id="menu-4" to="/products" className={menuClass}>
+            <MdFastfood className="mr-4 text-xl" />
+            Products
+          </NavLink>
+        </li>
+        <li>
           <NavLink id="menu-customers" to="/customers" className={menuClass}>
             <BiUserCircle className="mr-2 text-xl flex-shrink-0" />
             <span className="truncate">Customers</span>
           </NavLink>
         </li>
         <li>
-        <NavLink id="menu-userlist" to="UserList" className={menuClass}>
-            <CgUserList  className="mr-2 text-xl flex-shrink-0"/>
+          <NavLink id="menu-userlist" to="UserList" className={menuClass}>
+            <CgUserList className="mr-2 text-xl flex-shrink-0" />
             <span className="truncate">List User</span>
           </NavLink>
         </li>
 
         {/* Pemisah Opsional */}
         <li className="pt-4 pb-2">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-4">Error Pages</span>
+          <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-4">
+            Error Pages
+          </span>
         </li>
 
         {/* Menu Error */}
