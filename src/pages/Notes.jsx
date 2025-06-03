@@ -16,7 +16,7 @@ export default function Notes() {
     const [addDataForm, setAddDataForm] = useState({ title: "", content: "" });
     // State untuk form edit
     const [editDataForm, setEditDataForm] = useState({ id: null, title: "", content: "" });
-    const [isEditing, setIsEditing] = useState(false); // Kontrol visibilitas modal edit
+    const [isEditing, setIsEditing] = useState(false); 
 
     // Handle change untuk form tambah
     const handleAddChange = (evt) => {
@@ -202,7 +202,7 @@ export default function Notes() {
             )}
 
 
-            {/* Modal/Form Edit Catatan */}
+            {/* Form Edit Catatan */}
             {isEditing && (
                 <div className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50 flex items-center justify-center p-4">
                     <div className="bg-white rounded-xl shadow-xl p-6 sm:p-8 w-full max-w-lg">
