@@ -1,3 +1,4 @@
+import { BiNote } from "react-icons/bi"; 
 import { MdFastfood } from "react-icons/md";
 import { CgUserList } from "react-icons/cg";
 import { AiOutlineUser } from "react-icons/ai";
@@ -39,6 +40,12 @@ export default function MenuList() {
           <NavLink id="menu-4" to="/products" className={menuClass}>
             <MdFastfood className="mr-4 text-xl" />
             Products
+          </NavLink>
+        </li>
+         <li>
+          <NavLink id="menu-4" to="/Notes" className={menuClass}>
+            <BiNote className="mr-4 text-xl" />
+            Notes
           </NavLink>
         </li>
         <li>
