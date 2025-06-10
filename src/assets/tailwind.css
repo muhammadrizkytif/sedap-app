@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, cupcake, nord, dracula, luxury;
+}
+
 @font-face {
     font-family: 'barlow';
     src: url(/fonts/Barlow-Regular.tff);
@@ -27,6 +31,8 @@
     --color-hijau: #00B074; 
     --color-merah: #ef4444; 
     --color-biru: #3b82f6;
-    --color-kuning: #f59e0b; 
+    --color-kuning: #f59e0b;     
+
 }
+
     
